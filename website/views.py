@@ -12,7 +12,7 @@ def contact(request) :
 		message_email =request.POST['message-email']
 		message =request.POST['message']
 		phone_number=request.POST['phone-number']
-		host_email='sahanadamotharan@gmail.com'
+		host_email='sahanaamotharan@gmail.com'
 		
 		email=EmailMessage('From Dr Sahana',
 		f' Hi {message_name}! \n  Thanks for  contacting me Will be glad to assist you on the query raised..\n Your mobile no {phone_number} \n\nYour Query :{message}',settings.EMAIL_HOST_USER,[message_email,host_email])
